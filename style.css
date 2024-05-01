@@ -62,3 +62,16 @@ a {
  max-width: 100%;
  height: auto;
 }
+
+/*Navbar*/
+.gl-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+ /* z-index: 1; */
+}
+.gl-nav {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: 100%;
+}
