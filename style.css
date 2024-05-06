@@ -63,6 +63,10 @@ a {
  height: auto;
 }
 
+.gl-white {
+  background-color: var(--color-white);
+}
+
 /*Navbar*/
 .gl-top {
   position: fixed;
@@ -74,4 +78,29 @@ a {
   display: grid;
   grid-template-columns: 1fr 2fr;
   width: 100%;
+  box-shadow:0 2px 5px 0 rgba(0, 0, 0, 0.16) ;
+}
+
+.gl-nav-logo,
+.gl-nav-items {
+  letter-spacing: 0.4rem;
+}
+
+.gl-nav-logo,
+.gl-nav-items a {
+  text-decoration: none;
+}
+
+.gl-nav-items {
+ text-align: right;
+}
+
+.gl-nav-items a:hover {
+  color:var(--color-grey)
+}
+
+.gl-nav-items {
+  display: flex;
+  justify-content: end;
+  padding-right: 2em;
 }
