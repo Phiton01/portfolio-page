@@ -75,7 +75,8 @@ a {
  /* z-index: 1; */
 }
 .gl-nav {
-  display: grid;
+  justify-content: space-between;
+  display: flex;
   grid-template-columns: 1fr 2fr;
   width: 100%;
   box-shadow:0 2px 5px 0 rgba(0, 0, 0, 0.16) ;
@@ -100,7 +101,15 @@ a {
 }
 
 .gl-nav-items {
-  display: flex;
   justify-content: end;
   padding-right: 2em;
+}
+
+/*Sezione hero*/
+
+.gl-hero {
+  display: grid;
+  min-height: 50vw;
+  max-height: 70vh;
+  background-image: ;
 }
