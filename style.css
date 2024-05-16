@@ -63,7 +63,7 @@ a {
   position: fixed;
   top: 0;
   width: 100%;
- /* z-index: 1; */
+  z-index: 1;
 }
 .gl-nav {
   justify-content: space-between;
@@ -88,7 +88,7 @@ a {
 }
 
 .gl-nav-items a:hover {
-  color:var(--color-grey)
+  color: var(--color-grey);
 }
 
 .gl-nav-items {
@@ -110,10 +110,6 @@ a {
 }
 
 /*Sezione progetto*/
-
-.gl-project {
-  grid-template-columns: repeat(3, 1fr);
-}
 
 .gl-portfolio-img {
   width: 100%;
@@ -137,7 +133,7 @@ a {
 }
 .gl-black {
   background-color: var(--color-black);
-  color:var(--color-white);
+  color: var(--color-white);
 }
 
 .gl-opacity-min {
@@ -178,3 +174,17 @@ a {
   display: grid;
   gap: 1rem;
 }
+
+/*Media query*/
+
+@media (min-width: 571px) {
+  .gl-project {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+  
+@media (min-width: 821px) {
+ .gl-project {
+     grid-template-columns: repeat(3, 1fr);
+  }
+ }
