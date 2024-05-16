@@ -102,7 +102,7 @@ a {
   display: grid;
   min-height: 50vw;
   max-height: 70vh;
-  background-image: url(immagini/logo.jpeg) ;
+  background-image: url(immagini/logo-1.jpeg) ;
   background-repeat: no-repeat;
   background-size: cover;
   align-items: center;
@@ -117,11 +117,11 @@ a {
 
 .gl-portfolio-img {
   width: 100%;
-}
+  }
 
 .gl-display-container {
   position: relative;
-}
+  }
 
 .gl-display-topleft {
   position: absolute;
