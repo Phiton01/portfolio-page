@@ -123,6 +123,29 @@ a {
   position: absolute;
 }
 
+/*Sezione contatti*/
+
+.gl-input {
+  font-size: 1.4rem;
+  padding: 0.8rem;
+  display: block;
+  border: none;
+  border-bottom: 1px solid var(--color-grey);
+  width: 100%;
+}
+
+.gl-button {
+  font-size: 1.6rem;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  margin-top: 1.5rem;
+}
+
+.gl-button:hover {
+  background-color: var(--color-grey);
+  color: var(--color-black);
+}
+
 /*Utility class*/
 
 .gl-center {
