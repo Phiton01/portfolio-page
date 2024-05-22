@@ -2,9 +2,9 @@
 
 :root {
     --color-black:#000;
-    --color-pale-grey: hsl(0,0,95%);
+    --color-pale-grey: rgb(242, 242, 242);
     --color-white: #fff;
-    --color-grey: hsl(0,0,62%);
+    --color-grey: rgb(158, 158, 158);
     --font-family-primary: "Open Sans";
 }
 
@@ -129,8 +129,8 @@ a {
   font-size: 1.4rem;
   padding: 0.8rem;
   display: block;
-  border: none;
-  border-bottom: 1px solid var(--color-grey);
+  border: 0px solid var(--color-grey);
+  border-bottom-width: 1px;
   width: 100%;
 }
 
@@ -146,7 +146,89 @@ a {
   color: var(--color-black);
 }
 
+/*Sezione testimonial*/
+
+.gl-testimonial img {
+  width: 5rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.gl-testimonial .name {
+  font-size: 1.6rem;
+  font-weight: 200;
+  line-height: 1;
+}
+
+.gl-testimonial .position {
+  font-size: 1.4rem;
+  opacity: 0.5;
+}
+
+.gl-testimonial > p:first-of-type {
+  font-size: 1.4rem;
+  line-height: 1.2;
+}
+
+.gl-testimonial > p:last-of-type {
+ opacity: 0.7;
+}
+
+.gl-testimonial-grid {
+  gap: 2rem;
+ display: grid;
+ grid-template-areas:
+   "one"
+   "two"
+   "three"
+   "four"
+   "five";
+}
+
+.gl-testimonial-grid .gl-testimonial:nth-child(1) {
+ grid-area: one;
+}
+
+.gl-testimonial-grid .gl-testimonial:nth-child(2) {
+ grid-area: two;
+}
+
+.gl-testimonial-grid .gl-testimonial:nth-child(3) {
+ grid-area: three;
+}
+
+.gl-testimonial-grid .gl-testimonial:nth-child(4) {
+ grid-area: four;
+}
+
+.gl-testimonial-grid .gl-testimonial:nth-child(5) {
+ grid-area: five;
+}
+
+.gl-testimonial {
+ padding: 2rem;
+ border-radius:1rem;
+ box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(217 19% 35% / 0.25);
+}
+
 /*Utility class*/
+
+.bg-primary {
+ background-color: #abf4d8;
+}
+
+.bg-secondary {
+ background-color: #c7cdea;
+}
+
+.bg-neutral {
+ background-color: rgb(252, 238, 255);
+}
+
+.flex {
+   display:flex;
+   gap: 2em;
+}
 
 .gl-center {
   text-align: center;
@@ -204,10 +286,22 @@ a {
   .gl-project {
     grid-template-columns: repeat(2, 1fr);
   }
+  .gl-testimonial-grid {
+     grid-template-areas:
+      "one one two"
+      "five five five"
+      "three four four";
+  }
 }
-  
+
 @media (min-width: 821px) {
  .gl-project {
      grid-template-columns: repeat(3, 1fr);
   }
+  .gl-testimonial-grid {
+    grid-template-areas:
+    "one one two five"
+    "three four four five";
  }
+}
+
